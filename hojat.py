@@ -56,14 +56,15 @@ def main_menu():
     """)
 
     print("    Menu Options:")
-    print("    1: FOOTPRINTING/DNS - dns-gathering.py")
-    print("    2: FOOTPRINTING/nfs-check - nfs-check.py")
-    print("    3: FOOTPRINTING/rpcclient - rpcclient.py")
-    print("    4: FOOTPRINTING/smbclient - smbclient.py")
-    print("    5: FOOTPRINTING/smtp - smtp.py")
-    print("    6: INFORMATION GATHERING/netcraft - netcraft.py")
-    print("    7: INFORMATION GATHERING/subdomain - subdomain.py")
-    print("    8: INFORMATION GATHERING/whois - my_whois.py")
+    print("    1: Learning-Cheatsheets/cheatsheet.py")
+    print("    2: FOOTPRINTING/DNS - dns-gathering.py")
+    print("    3: FOOTPRINTING/nfs-check - nfs-check.py")
+    print("    4: FOOTPRINTING/rpcclient - rpcclient.py")
+    print("    5: FOOTPRINTING/smbclient - smbclient.py")
+    print("    6: FOOTPRINTING/smtp - smtp.py")
+    print("    7: INFORMATION GATHERING/netcraft - netcraft.py")
+    print("    8: INFORMATION GATHERING/subdomain - subdomain.py")
+    print("    9: INFORMATION GATHERING/whois - my_whois.py")
     print("    0: Exit\n")
 
 # Loop to display the menu and run the selected script
@@ -73,20 +74,22 @@ while True:
     if selection == '0':
         break
     elif selection == '1':
-        os.system('python FOOTPRINTING/DNS/dns-gathering.py')
+        os.system('python Learning-Cheatsheets/cheatsheet.py')
     elif selection == '2':
-        os.system('python FOOTPRINTING/nfs-check/nfs-check.py')
+        os.system('python FOOTPRINTING/DNS/dns-gathering.py')
     elif selection == '3':
-        os.system('python FOOTPRINTING/rpcclient/rpcclient.py')
+        os.system('python FOOTPRINTING/nfs-check/nfs-check.py')
     elif selection == '4':
-        os.system('python FOOTPRINTING/smbclient/smbclient.py')
+        os.system('python FOOTPRINTING/rpcclient/rpcclient.py')
     elif selection == '5':
-        os.system('python FOOTPRINTING/smtp/smtp.py')
+        os.system('python FOOTPRINTING/smbclient/smbclient.py')
     elif selection == '6':
-        os.system('python "INFORMATION GATHERING/netcraft/netcraft.py"')
+        os.system('python FOOTPRINTING/smtp/smtp.py')
     elif selection == '7':
-        os.system('python "INFORMATION GATHERING/subdomain/subdomain.py"')
+        os.system('python "INFORMATION GATHERING/netcraft/netcraft.py"')
     elif selection == '8':
+        os.system('python "INFORMATION GATHERING/subdomain/subdomain.py"')
+    elif selection == '9':
         os.system('python "INFORMATION GATHERING/whois/my_whois.py"')
     else:
         print("Invalid selection, please try again.")
